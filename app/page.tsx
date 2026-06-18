@@ -6,7 +6,6 @@ import {
   Cloud,
   Code2,
   Database,
-  FileText,
   Download,
   ExternalLink,
   Mail,
@@ -358,10 +357,6 @@ export default function Home() {
           <a className="button ghost dark" href={linkedInUrl} target="_blank" rel="noreferrer">
             <ExternalLink size={18} aria-hidden="true" />
             LinkedIn
-          </a>
-          <a className="button ghost dark" href="/Profile.pdf">
-            <FileText size={18} aria-hidden="true" />
-            Profile PDF
           </a>
         </div>
       </section>
