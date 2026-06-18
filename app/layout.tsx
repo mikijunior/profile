@@ -1,17 +1,36 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import {
+  getSiteOrigin,
+  getSiteUrl,
+  siteDescription,
+  siteTitle
+} from "@/lib/site-config";
 import "./globals.css";
 
+const siteUrl = getSiteUrl();
+const heroImageUrl = `${siteUrl}/assets/hero-command-center.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("http://127.0.0.1:3000"),
-  title: "Serhii Drachuk | Senior PHP Laravel Developer",
-  description:
-    "Senior PHP/Laravel developer building scalable SaaS platforms, analytics systems, e-commerce integrations, and real-time applications.",
+  metadataBase: new URL(getSiteOrigin()),
+  title: siteTitle,
+  description: siteDescription,
+  alternates: {
+    canonical: siteUrl
+  },
   openGraph: {
-    title: "Serhii Drachuk | Senior PHP Laravel Developer",
+    title: siteTitle,
     description:
       "Enterprise-grade backend engineering with a sharp product edge.",
-    images: ["/assets/hero-command-center.png"]
+    url: siteUrl,
+    siteName: "Serhii Drachuk Portfolio",
+    images: [heroImageUrl]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [heroImageUrl]
   }
 };
 

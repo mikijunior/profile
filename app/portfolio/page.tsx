@@ -1,5 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { getSiteUrl, siteTitle } from "@/lib/site-config";
+
+const portfolioUrl = `${getSiteUrl()}/portfolio`;
+
+export const metadata: Metadata = {
+  title: `Portfolio | ${siteTitle}`,
+  description:
+    "Selected Laravel, SaaS, analytics, Shopify, and real-time systems from Serhii Drachuk's professional portfolio.",
+  alternates: {
+    canonical: portfolioUrl
+  },
+  openGraph: {
+    title: `Portfolio | ${siteTitle}`,
+    description:
+      "Case-study index for backend-heavy SaaS, commerce, analytics, and real-time systems.",
+    url: portfolioUrl
+  }
+};
 
 const cases = [
   {

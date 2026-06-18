@@ -6,6 +6,7 @@ import {
   Cloud,
   Code2,
   Database,
+  FileText,
   Download,
   ExternalLink,
   Mail,
@@ -15,6 +16,7 @@ import {
   ShieldCheck,
   ShoppingCart
 } from "lucide-react";
+import DigitalTwinChat from "./components/DigitalTwinChat";
 
 const linkedInUrl =
   "https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D1%96%D0%B9-%D0%B4%D1%80%D0%B0%D1%87%D1%83%D0%BA-26b134167";
@@ -148,6 +150,7 @@ export default function Home() {
             <a href="#about">About</a>
             <a href="#journey">Journey</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="#digital-twin">AI Chat</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
@@ -329,6 +332,19 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section twinSection" id="digital-twin">
+        <div className="twinIntro">
+          <p className="sectionKicker">AI digital twin</p>
+          <h2>Ask the version of me trained on this career profile.</h2>
+          <p>
+            The chat uses OpenRouter on the server side and answers from the
+            same CV-backed context as this portfolio, so recruiters and clients
+            can quickly pressure-test fit, stack depth, and project experience.
+          </p>
+        </div>
+        <DigitalTwinChat />
+      </section>
+
       <section className="section contactSection" id="contact">
         <div>
           <p className="sectionKicker">Contact</p>
@@ -344,7 +360,7 @@ export default function Home() {
             LinkedIn
           </a>
           <a className="button ghost dark" href="/Profile.pdf">
-            <Code2 size={18} aria-hidden="true" />
+            <FileText size={18} aria-hidden="true" />
             Profile PDF
           </a>
         </div>

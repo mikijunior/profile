@@ -2,26 +2,36 @@
   "name": "serhii-drachuk-portfolio",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
-    "lucide-react": "latest",
-    "next": "latest",
-    "postcss": "^8.5.15",
-    "react": "latest",
-    "react-dom": "latest"
+    "lucide-react": "1.21.0",
+    "next": "16.2.9",
+    "postcss": "8.5.15",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1"
   },
   "overrides": {
-    "postcss": "^8.5.15"
+    "postcss": "8.5.15"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "typescript": "latest"
+    "@types/node": "25.9.3",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.9",
+    "typescript": "6.0.3",
+    "vitest": "4.1.9"
   }
 }
