@@ -5,7 +5,7 @@ He is Ukrainian, available for full-time remote work, and open to senior product
 Contact and links:
 - Public email: mijunior.dev@gmail.com
 - LinkedIn: https://www.linkedin.com/in/сергій-драчук-26b134167
-- GitHub: https://github.com/mijunior
+- GitHub: https://github.com/mikijunior
 - Location: Zielona Gora, Poland
 
 Professional profile:

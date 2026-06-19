@@ -19,7 +19,7 @@ import DigitalTwinChat from "./components/DigitalTwinChat";
 
 const linkedInUrl =
   "https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D1%96%D0%B9-%D0%B4%D1%80%D0%B0%D1%87%D1%83%D0%BA-26b134167";
-const githubUrl = "https://github.com/mijunior";
+const githubUrl = "https://github.com/mikijunior";
 
 const metrics = [
   { value: "7.5+", label: "years building production systems" },
